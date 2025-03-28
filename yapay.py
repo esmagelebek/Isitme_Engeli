@@ -123,8 +123,7 @@ with torch.no_grad():
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
-accuracy = 100 * correct / total
-print(f"Test Accuracy: {accuracy:.2f}%")
+
 
 # Modeli yükleme
 model = ANNModel(num_classes)
